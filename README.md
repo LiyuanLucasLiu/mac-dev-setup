@@ -852,6 +852,16 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 - [Evernote](https://evernote.com/): If I don't write something down, I'll forget it. As a developer, you learn so many new things every day, and technology keeps changing, it would be insane to want to keep it all in your head. So take notes, sync them to the cloud, and have them on all your devices. To be honest, I switched to [Simplenote](http://simplenote.com/) because I only take text notes, and I got tired of Evernote putting extra spaces between paragraphs when I copy & pasted into other applications. Simplenote is so much better for text notes (and it supports Markdown!). **(Both are free)**
 - [Moom](http://manytricks.com/moom/): Don't waste time resizing and moving your windows. Moom makes this very easy. **($10)**
 
+## Zsh
 
+very cool shell
 
+oh-my-zsh: pre-configured zsh
 
+## Enable R/W NTFS support
+brew install Caskroom/cask/osxfuse
+brew update && brew install ntfs-3g
+Rebooted and pressed Command + R, then from Terminal, ran csrutil disable
+sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+sudo ln -s /usr/local/Cellar/ntfs-3g/2016.2.22/sbin/mount_ntfs /sbin/mount_ntfs
+Verified with ls -l /sbin/mount_ntfs*
