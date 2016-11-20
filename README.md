@@ -860,8 +860,13 @@ oh-my-zsh: pre-configured zsh
 
 ## Enable R/W NTFS support
 brew install Caskroom/cask/osxfuse
+
 brew update && brew install ntfs-3g
+
 Rebooted and pressed Command + R, then from Terminal, ran csrutil disable
+
 sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+
 sudo ln -s /usr/local/Cellar/ntfs-3g/2016.2.22/sbin/mount_ntfs /sbin/mount_ntfs
+
 Verified with ls -l /sbin/mount_ntfs*
